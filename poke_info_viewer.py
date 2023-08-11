@@ -14,6 +14,7 @@ import requests
 # Create the main window
 root = Tk()
 root.title("Pokemon Information")
+root.resizable(False, False)
 
 # TODO: Create the frames
 frame_input = ttk.Frame(root)
@@ -25,8 +26,8 @@ frame_info.grid(row=1, column=0, padx=(20,10), pady=(10,20), sticky=N)
 frame_stats = ttk.LabelFrame(root, text="stats")
 frame_stats.grid(row=1, column=1, padx=(10,20), pady=(10,20), sticky=N)
 
-label_name = ttk.Entry(frame_input, text="Pokemon Name")
-label_name.grid(row=0, column=0, padx=(10,5), pady=(10,))
+label_name = ttk.Label(frame_input, text="Pokemon Name")
+label_name.grid(row=0, column=0, padx=(10,5), pady=10)
 
 enter_name = ttk.Entry(frame_input)
 enter_name.insert(0,'mew')
