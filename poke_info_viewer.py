@@ -36,7 +36,7 @@ enter_name.grid(row=0, column=1)
 def handle_button_get_info():
    poke_name = enter_name.get().strip()
    if poke_name == '' : return
-   poke_info = get_pokemon_info(poke_name)
+   poke_info = get_pokemon_info(poke_name) 
 
    if poke_info:
       # Populate the Info frame
